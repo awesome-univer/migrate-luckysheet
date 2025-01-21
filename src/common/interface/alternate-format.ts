@@ -1,8 +1,7 @@
+import { IRangeArray } from "./selection"
+
 export interface IluckySheetAlternateFormatSave {
-    cellrange: {
-        row: number[],
-        column: number[]
-    },
+    cellrange: IRangeArray,
     format: IluckySheetAlternateFormatItem,
     hasRowHeader: boolean,
     hasRowFooter: boolean

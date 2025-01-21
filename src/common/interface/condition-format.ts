@@ -6,7 +6,7 @@ export interface IluckysheetConditionFormat {
     format: string[] | IluckysheetCFDefaultFormat | IluckysheetCFIconsFormat,//style
     conditionName?: string | undefined,//Detailed settings,comparison parameters
     conditionRange?: IluckySheetSelection[],//Detailed settings,comparison range
-    conditionValue?: any[],//Detailed settings,comparison value
+    conditionValue?: (number | string | object)[],//Detailed settings,comparison value
 }
 
 export interface IluckysheetCFDefaultFormat {

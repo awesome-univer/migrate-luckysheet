@@ -1,4 +1,4 @@
-import { CellValueType, HorizontalAlign, ICellData, IStyleData, ITextRun, ITextStyle, IWorkbookData, IWorksheetData, Tools, VerticalAlign, WrapStrategy } from "@univerjs/core";
+import { CellValueType, generateRandomId, HorizontalAlign, ICellData, IStyleData, ITextRun, ITextStyle, IWorkbookData, IWorksheetData, Tools, VerticalAlign, WrapStrategy } from "@univerjs/core";
 import { ILuckySheet } from "../common/interface/lucky-sheet";
 import { ILuckyJson } from "../common/interface/lucky-json";
 import { ILuckyInlineStrItem } from "../common/interface/cell-style";
@@ -69,7 +69,7 @@ export function covertCell(newCell: ICellData, cell:  Partial<IluckySheetCelldat
         dataStream += '\r\n';
 
         newCell.p = {
-            id: Tools.generateRandomId(6),
+            id: generateRandomId(6),
             body: {
                 dataStream,
                 textRuns,

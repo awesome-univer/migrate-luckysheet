@@ -5,6 +5,7 @@ import { worksheetProperty } from './worksheet-property';
 import { worksheetConfig } from './worksheet-config';
 import { cellData } from './cell';
 import { DATA_VALIDATION_PLUGIN_NAME } from '@univerjs/sheets-data-validation';
+import { IConditionFormattingRule, SHEET_CONDITIONAL_FORMATTING_PLUGIN } from '@univerjs/sheets-conditional-formatting';
 
 
 export function luckyToUniver(luckyJson: Partial<ILuckyJson>) {
@@ -15,16 +16,21 @@ export function luckyToUniver(luckyJson: Partial<ILuckyJson>) {
 
     const sheets = luckyJson.data;
     const dataValidationData: Record<string, ISheetDataValidationRule[]>  = {};
+    const conditionFormat: Record<string, IConditionFormattingRule[]> = {};
 
     if (Array.isArray(sheets)) {
         workbookData.sheets = {};
         for (let sheet of sheets) {
             const worksheetData: Partial<IWorksheetData> = {};
 
-            const { worksheetDataVerification } = worksheetProperty(workbookData, worksheetData, luckyJson, sheet);
+            const { worksheetDataVerification, worksheetConditionFormat } = worksheetProperty(workbookData, worksheetData, luckyJson, sheet);
 
             if (worksheetDataVerification && worksheetDataVerification.length > 0) {
                 dataValidationData[worksheetData.id!] = worksheetDataVerification;
+            }
+
+            if (worksheetConditionFormat && worksheetConditionFormat.length > 0) {
+                conditionFormat[worksheetData.id!] = worksheetConditionFormat;
             }
 
             worksheetConfig(workbookData, worksheetData, luckyJson, sheet);
@@ -38,6 +44,10 @@ export function luckyToUniver(luckyJson: Partial<ILuckyJson>) {
         {
             name: DATA_VALIDATION_PLUGIN_NAME,
             data: JSON.stringify(dataValidationData)
+        },
+        {
+            name: SHEET_CONDITIONAL_FORMATTING_PLUGIN,
+            data: JSON.stringify(conditionFormat)
         }
     ]
 

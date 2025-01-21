@@ -2,6 +2,7 @@ import { IWorkbookData, IWorksheetData, Tools } from "@univerjs/core";
 import { ILuckyJson } from "../common/interface/lucky-json";
 import { ILuckySheet } from "../common/interface/lucky-sheet";
 import { dataVerification } from "./data-verification";
+import { conditionFormat } from "./condition-format";
 
 export function worksheetProperty(workbookData: Partial<IWorkbookData>,worksheetData: Partial<IWorksheetData>, luckyJson: Partial<ILuckyJson>, sheet: Partial<ILuckySheet>){
     //  id
@@ -43,7 +44,10 @@ export function worksheetProperty(workbookData: Partial<IWorkbookData>,worksheet
 
     const worksheetDataVerification = dataVerification(workbookData, worksheetData, luckyJson, sheet);
 
+    const worksheetConditionFormat = conditionFormat(workbookData, worksheetData, luckyJson, sheet);
+
     return {
-        worksheetDataVerification
+        worksheetDataVerification,
+        worksheetConditionFormat
     }
 }

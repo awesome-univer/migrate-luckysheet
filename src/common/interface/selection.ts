@@ -1,8 +1,12 @@
 
 //luckysheet general selection
-export interface IluckySheetSelection {
-    row: number[], //selection start row and end row
-    column: number[], //selection start column and end column
+
+export interface IRangeArray {
+    row: [number, number], //selection start row and end row
+    column: [number, number], //selection start column and end column
+}
+
+export interface IluckySheetSelection extends IRangeArray {
     sheetIndex?: number
     row_focus?: number, //selection focus row
     column_focus?: number, //selection focus column
