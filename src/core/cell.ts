@@ -1,4 +1,4 @@
-import { CellValueType, generateRandomId, HorizontalAlign, ICellData, IStyleData, ITextRun, ITextStyle, IWorkbookData, IWorksheetData, Tools, VerticalAlign, WrapStrategy } from "@univerjs/core";
+import { CellValueType, generateRandomId, HorizontalAlign, ICellData, isRealNum, IStyleData, ITextRun, ITextStyle, IWorkbookData, IWorksheetData, VerticalAlign, WrapStrategy } from "@univerjs/core";
 import { ILuckySheet } from "../common/interface/lucky-sheet";
 import { ILuckyJson } from "../common/interface/lucky-json";
 import { ILuckyInlineStrItem } from "../common/interface/cell-style";
@@ -28,7 +28,7 @@ export function cellData(workbookData: Partial<IWorkbookData>, worksheetData: Pa
     }
 }
 
-export function covertCell(newCell: ICellData, cell:  Partial<IluckySheetCelldataValue> | string | null) {
+export function covertCell(newCell: ICellData, cell: Partial<IluckySheetCelldataValue> | string | null) {
 
     if (cell === null) return;
 
@@ -77,20 +77,25 @@ export function covertCell(newCell: ICellData, cell:  Partial<IluckySheetCelldat
             documentStyle: {},
         };
     }
-    
+
     // content
     if (cell.v !== undefined) {
         let v = cell.v;
+        newCell.v = cell.v;
+
         if (typeof v === 'boolean') {
             v = v ? 1 : 0;
             newCell.t = CellValueType.BOOLEAN
+        } else if (isNumberCell(cell)) {
+            newCell.t = CellValueType.NUMBER;
+            newCell.v = Number(v);
         }
-        newCell.v = cell.v;
+
     } else if (cell.m !== undefined) {
         newCell.v = cell.m;
     }
 
-    if(cell.f !== undefined) {
+    if (cell.f !== undefined) {
         newCell.f = cell.f;
     }
 
@@ -147,7 +152,7 @@ export function covertInlineStyle(textStyle: ITextStyle, inlineStrItem: Partial<
 }
 
 export function covertCellStyle(cellStyle: IStyleData, cell: Partial<IluckySheetCelldataValue>) {
-    
+
     // background color
     if (cell.bg !== undefined) {
         cellStyle.bg = {
@@ -262,4 +267,11 @@ export function covertCellStyle(cellStyle: IStyleData, cell: Partial<IluckySheet
 
 function replaceNewlines(input: string): string {
     return input.replace(/\n/g, '\r');
+}
+
+function isNumberCell(cell: Partial<IluckySheetCelldataValue>): boolean {
+    const v = cell.v;
+    const isNumber = typeof v === 'number';
+    const isNumberCellType = cell.ct?.t === 'n' && v !== undefined && isRealNum(v);
+    return isNumber || isNumberCellType;
 }

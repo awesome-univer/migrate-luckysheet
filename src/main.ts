@@ -1,5 +1,5 @@
 import "./style.css";
-import { IWorkbookData, LocaleType, merge, Univer, UniverInstanceType, Workbook } from "@univerjs/core";
+import { FUniver, IWorkbookData, LocaleType, merge, Univer, UniverInstanceType, Workbook } from "@univerjs/core";
 import { defaultTheme } from "@univerjs/design";
  
 import { UniverFormulaEnginePlugin } from "@univerjs/engine-formula";
@@ -99,9 +99,11 @@ const univerData = luckyToUniver(luckyJson);
 univer.createUnit<IWorkbookData, Workbook>(UniverInstanceType.UNIVER_SHEET,univerData);
 
 window.univer = univer;
+window.univerAPI = FUniver.newAPI(univer);
 
 declare global {
   interface Window {
     univer?: Univer;
+    univerAPI?: ReturnType<typeof FUniver.newAPI>;
   }
 }

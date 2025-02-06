@@ -1,6 +1,6 @@
 import { ILuckyJson } from "../common/interface/lucky-json";
 
-// Get json from https://dream-num.github.io/LuckysheetDemo/, luckysheet.toJson(), note that the cell data is in sheet.celldata
+// Get json from https://aream-num.github.io/LuckysheetDemo/, luckysheet.toJson(), note that the cell data is in sheet.celldata
 export const luckyJson: Partial<ILuckyJson> = {
     "container": "luckysheet",
     "lang": "en",
@@ -29514,6 +29514,630 @@ export const luckyJson: Partial<ILuckyJson> = {
                         "ht": "2",
                         "vt": "0"
                     }
+                },
+                {
+                    "r": 1,
+                    "c": 13,
+                    "v": {
+                        "m": "Top/Last",
+                        "ct": {
+                            "fa": "General",
+                            "t": "g"
+                        },
+                        "v": "Top/Last",
+                        "bg": null,
+                        "bl": 1,
+                        "it": 0,
+                        "ff": 0,
+                        "fs": "10",
+                        "fc": "rgb(51, 51, 51)",
+                        "ht": "1",
+                        "vt": "0",
+                        "mc": {
+                            "r": 9,
+                            "c": 10,
+                            "rs": 1,
+                            "cs": 2
+                        }
+                    }
+                },
+                {
+                    "r": 2,
+                    "c": 13,
+                    "v": {
+                        "v": 1,
+                        "ct": {
+                            "fa": "General",
+                            "t": "n"
+                        },
+                        "m": "1",
+                        "bg": null,
+                        "bl": 0,
+                        "it": 0,
+                        "ff": 1,
+                        "fs": 9,
+                        "fc": "rgb(0, 0, 0)",
+                        "ht": 1,
+                        "vt": 0
+                    }
+                },
+                {
+                    "r": 2,
+                    "c": 14,
+                    "v": {
+                        "v": 1,
+                        "ct": {
+                            "fa": "General",
+                            "t": "n"
+                        },
+                        "m": "1",
+                        "bg": null,
+                        "bl": 0,
+                        "it": 0,
+                        "ff": 1,
+                        "fs": 9,
+                        "fc": "rgb(0, 0, 0)",
+                        "ht": 1,
+                        "vt": 0
+                    }
+                },
+                {
+                    "r": 2,
+                    "c": 15,
+                    "v": {
+                        "v": 1,
+                        "ct": {
+                            "fa": "General",
+                            "t": "n"
+                        },
+                        "m": "1",
+                        "bg": null,
+                        "bl": 0,
+                        "it": 0,
+                        "ff": 1,
+                        "fs": 9,
+                        "fc": "rgb(0, 0, 0)",
+                        "ht": 1,
+                        "vt": 0
+                    }
+                },
+                {
+                    "r": 2,
+                    "c": 16,
+                    "v": {
+                        "v": 1,
+                        "ct": {
+                            "fa": "General",
+                            "t": "n"
+                        },
+                        "m": "1",
+                        "bg": null,
+                        "bl": 0,
+                        "it": 0,
+                        "ff": 1,
+                        "fs": 9,
+                        "fc": "rgb(0, 0, 0)",
+                        "ht": 1,
+                        "vt": 0
+                    }
+                },
+                {
+                    "r": 3,
+                    "c": 13,
+                    "v": {
+                        "v": 2,
+                        "ct": {
+                            "fa": "General",
+                            "t": "n"
+                        },
+                        "m": "2",
+                        "bg": null,
+                        "bl": 0,
+                        "it": 0,
+                        "ff": 1,
+                        "fs": 9,
+                        "fc": "rgb(0, 0, 0)",
+                        "ht": 1,
+                        "vt": 0
+                    }
+                },
+                {
+                    "r": 3,
+                    "c": 14,
+                    "v": {
+                        "v": 2,
+                        "ct": {
+                            "fa": "General",
+                            "t": "n"
+                        },
+                        "m": "2",
+                        "bg": null,
+                        "bl": 0,
+                        "it": 0,
+                        "ff": 1,
+                        "fs": 9,
+                        "fc": "rgb(0, 0, 0)",
+                        "ht": 1,
+                        "vt": 0
+                    }
+                },
+                {
+                    "r": 3,
+                    "c": 15,
+                    "v": {
+                        "v": 2,
+                        "ct": {
+                            "fa": "General",
+                            "t": "n"
+                        },
+                        "m": "2",
+                        "bg": null,
+                        "bl": 0,
+                        "it": 0,
+                        "ff": 1,
+                        "fs": 9,
+                        "fc": "rgb(0, 0, 0)",
+                        "ht": 1,
+                        "vt": 0
+                    }
+                },
+                {
+                    "r": 3,
+                    "c": 16,
+                    "v": {
+                        "v": 2,
+                        "ct": {
+                            "fa": "General",
+                            "t": "n"
+                        },
+                        "m": "2",
+                        "bg": null,
+                        "bl": 0,
+                        "it": 0,
+                        "ff": 1,
+                        "fs": 9,
+                        "fc": "rgb(0, 0, 0)",
+                        "ht": 1,
+                        "vt": 0
+                    }
+                },
+                {
+                    "r": 4,
+                    "c": 13,
+                    "v": {
+                        "v": 3,
+                        "ct": {
+                            "fa": "General",
+                            "t": "n"
+                        },
+                        "m": "3",
+                        "bg": null,
+                        "bl": 0,
+                        "it": 0,
+                        "ff": 1,
+                        "fs": 9,
+                        "fc": "rgb(0, 0, 0)",
+                        "ht": 1,
+                        "vt": 0
+                    }
+                },
+                {
+                    "r": 4,
+                    "c": 14,
+                    "v": {
+                        "v": 3,
+                        "ct": {
+                            "fa": "General",
+                            "t": "n"
+                        },
+                        "m": "3",
+                        "bg": null,
+                        "bl": 0,
+                        "it": 0,
+                        "ff": 1,
+                        "fs": 9,
+                        "fc": "rgb(0, 0, 0)",
+                        "ht": 1,
+                        "vt": 0
+                    }
+                },
+                {
+                    "r": 4,
+                    "c": 15,
+                    "v": {
+                        "v": 3,
+                        "ct": {
+                            "fa": "General",
+                            "t": "n"
+                        },
+                        "m": "3",
+                        "bg": null,
+                        "bl": 0,
+                        "it": 0,
+                        "ff": 1,
+                        "fs": 9,
+                        "fc": "rgb(0, 0, 0)",
+                        "ht": 1,
+                        "vt": 0
+                    }
+                },
+                {
+                    "r": 4,
+                    "c": 16,
+                    "v": {
+                        "v": 3,
+                        "ct": {
+                            "fa": "General",
+                            "t": "n"
+                        },
+                        "m": "3",
+                        "bg": null,
+                        "bl": 0,
+                        "it": 0,
+                        "ff": 1,
+                        "fs": 9,
+                        "fc": "rgb(0, 0, 0)",
+                        "ht": 1,
+                        "vt": 0
+                    }
+                },
+                {
+                    "r": 5,
+                    "c": 13,
+                    "v": {
+                        "v": 4,
+                        "ct": {
+                            "fa": "General",
+                            "t": "n"
+                        },
+                        "m": "4",
+                        "bg": null,
+                        "bl": 0,
+                        "it": 0,
+                        "ff": 1,
+                        "fs": 9,
+                        "fc": "rgb(0, 0, 0)",
+                        "ht": 1,
+                        "vt": 0
+                    }
+                },
+                {
+                    "r": 5,
+                    "c": 14,
+                    "v": {
+                        "v": 4,
+                        "ct": {
+                            "fa": "General",
+                            "t": "n"
+                        },
+                        "m": "4",
+                        "bg": null,
+                        "bl": 0,
+                        "it": 0,
+                        "ff": 1,
+                        "fs": 9,
+                        "fc": "rgb(0, 0, 0)",
+                        "ht": 1,
+                        "vt": 0
+                    }
+                },
+                {
+                    "r": 5,
+                    "c": 15,
+                    "v": {
+                        "v": 4,
+                        "ct": {
+                            "fa": "General",
+                            "t": "n"
+                        },
+                        "m": "4",
+                        "bg": null,
+                        "bl": 0,
+                        "it": 0,
+                        "ff": 1,
+                        "fs": 9,
+                        "fc": "rgb(0, 0, 0)",
+                        "ht": 1,
+                        "vt": 0
+                    }
+                },
+                {
+                    "r": 5,
+                    "c": 16,
+                    "v": {
+                        "v": 4,
+                        "ct": {
+                            "fa": "General",
+                            "t": "n"
+                        },
+                        "m": "4",
+                        "bg": null,
+                        "bl": 0,
+                        "it": 0,
+                        "ff": 1,
+                        "fs": 9,
+                        "fc": "rgb(0, 0, 0)",
+                        "ht": 1,
+                        "vt": 0
+                    }
+                },
+                {
+                    "r": 6,
+                    "c": 13,
+                    "v": {
+                        "v": 5,
+                        "ct": {
+                            "fa": "General",
+                            "t": "n"
+                        },
+                        "m": "5",
+                        "bg": null,
+                        "bl": 0,
+                        "it": 0,
+                        "ff": 1,
+                        "fs": 9,
+                        "fc": "rgb(0, 0, 0)",
+                        "ht": 1,
+                        "vt": 0
+                    }
+                },
+                {
+                    "r": 6,
+                    "c": 14,
+                    "v": {
+                        "v": 5,
+                        "ct": {
+                            "fa": "General",
+                            "t": "n"
+                        },
+                        "m": "5",
+                        "bg": null,
+                        "bl": 0,
+                        "it": 0,
+                        "ff": 1,
+                        "fs": 9,
+                        "fc": "rgb(0, 0, 0)",
+                        "ht": 1,
+                        "vt": 0
+                    }
+                },
+                {
+                    "r": 6,
+                    "c": 15,
+                    "v": {
+                        "v": 5,
+                        "ct": {
+                            "fa": "General",
+                            "t": "n"
+                        },
+                        "m": "5",
+                        "bg": null,
+                        "bl": 0,
+                        "it": 0,
+                        "ff": 1,
+                        "fs": 9,
+                        "fc": "rgb(0, 0, 0)",
+                        "ht": 1,
+                        "vt": 0
+                    }
+                },
+                {
+                    "r": 6,
+                    "c": 16,
+                    "v": {
+                        "v": 5,
+                        "ct": {
+                            "fa": "General",
+                            "t": "n"
+                        },
+                        "m": "5",
+                        "bg": null,
+                        "bl": 0,
+                        "it": 0,
+                        "ff": 1,
+                        "fs": 9,
+                        "fc": "rgb(0, 0, 0)",
+                        "ht": 1,
+                        "vt": 0
+                    }
+                },
+                {
+                    "r": 7,
+                    "c": 13,
+                    "v": {
+                        "v": 6,
+                        "ct": {
+                            "fa": "General",
+                            "t": "n"
+                        },
+                        "m": "6",
+                        "bg": null,
+                        "bl": 0,
+                        "it": 0,
+                        "ff": 1,
+                        "fs": 9,
+                        "fc": "rgb(0, 0, 0)",
+                        "ht": 1,
+                        "vt": 0
+                    }
+                },
+                {
+                    "r": 7,
+                    "c": 14,
+                    "v": {
+                        "v": 6,
+                        "ct": {
+                            "fa": "General",
+                            "t": "n"
+                        },
+                        "m": "6",
+                        "bg": null,
+                        "bl": 0,
+                        "it": 0,
+                        "ff": 1,
+                        "fs": 9,
+                        "fc": "rgb(0, 0, 0)",
+                        "ht": 1,
+                        "vt": 0
+                    }
+                },
+                {
+                    "r": 7,
+                    "c": 15,
+                    "v": {
+                        "v": 6,
+                        "ct": {
+                            "fa": "General",
+                            "t": "n"
+                        },
+                        "m": "6",
+                        "bg": null,
+                        "bl": 0,
+                        "it": 0,
+                        "ff": 1,
+                        "fs": 9,
+                        "fc": "rgb(0, 0, 0)",
+                        "ht": 1,
+                        "vt": 0
+                    }
+                },
+                {
+                    "r": 7,
+                    "c": 16,
+                    "v": {
+                        "v": 6,
+                        "ct": {
+                            "fa": "General",
+                            "t": "n"
+                        },
+                        "m": "6",
+                        "bg": null,
+                        "bl": 0,
+                        "it": 0,
+                        "ff": 1,
+                        "fs": 9,
+                        "fc": "rgb(0, 0, 0)",
+                        "ht": 1,
+                        "vt": 0
+                    }
+                },
+                {
+                    "r": 10,
+                    "c": 13,
+                    "v": {
+                        "v": "1",
+                        "ct": {
+                            "fa": "General",
+                            "t": "n"
+                        },
+                        "bg": null,
+                        "bl": 0,
+                        "it": 0,
+                        "ff": 0,
+                        "fs": "10",
+                        "fc": "rgb(51, 51, 51)",
+                        "ht": "2",
+                        "vt": "0",
+                    }
+                },
+                {
+                    "r": 11,
+                    "c": 13,
+                    "v": {
+                        "v": "2",
+                        "ct": {
+                            "fa": "General",
+                            "t": "n"
+                        },
+                        "bg": null,
+                        "bl": 0,
+                        "it": 0,
+                        "ff": 0,
+                        "fs": "10",
+                        "fc": "rgb(51, 51, 51)",
+                        "ht": "2",
+                        "vt": "0",
+                    }
+                },
+                {
+                    "r": 12,
+                    "c": 13,
+                    "v": {
+                        "v": "3",
+                        "ct": {
+                            "fa": "General",
+                            "t": "n"
+                        },
+                        "m": "3",
+                        "bg": null,
+                        "bl": 0,
+                        "it": 0,
+                        "ff": 0,
+                        "fs": "10",
+                        "fc": "rgb(51, 51, 51)",
+                        "ht": "2",
+                        "vt": "0",
+                    }
+                },
+                {
+                    "r": 13,
+                    "c": 13,
+                    "v": {
+                        "v": "-1",
+                        "ct": {
+                            "fa": "General",
+                            "t": "n"
+                        },
+                        "m": "-1",
+                        "bg": null,
+                        "bl": 0,
+                        "it": 0,
+                        "ff": 0,
+                        "fs": "10",
+                        "fc": "rgb(51, 51, 51)",
+                        "ht": "2",
+                        "vt": "0",
+                    }
+                },
+                {
+                    "r": 14,
+                    "c": 13,
+                    "v": {
+                        "v": "-2",
+                        "ct": {
+                            "fa": "General",
+                            "t": "n"
+                        },
+                        "m": "-2",
+                        "bg": null,
+                        "bl": 0,
+                        "it": 0,
+                        "ff": 0,
+                        "fs": "10",
+                        "fc": "rgb(51, 51, 51)",
+                        "ht": "2",
+                        "vt": "0",
+                    }
+                },
+                {
+                    "r": 15,
+                    "c": 13,
+                    "v": {
+                        "v": "-3",
+                        "ct": {
+                            "fa": "General",
+                            "t": "n"
+                        },
+                        "m": "-3",
+                        "bg": null,
+                        "bl": 0,
+                        "it": 0,
+                        "ff": 0,
+                        "fs": "10",
+                        "fc": "rgb(51, 51, 51)",
+                        "ht": "2",
+                        "vt": "0",
+                    }
                 }
             ],
             "ch_width": 1573,
@@ -29733,6 +30357,102 @@ export const luckyJson: Partial<ILuckyJson> = {
                     ]
                 },
                 {
+                    "type": "default",
+                    "cellrange": [
+                        {
+                            "row": [
+                                2,
+                                7
+                            ],
+                            "column": [
+                                13,
+                                13
+                            ]
+                        }
+                    ],
+                    "format": {
+                        "textColor": "#9c0006",
+                        "cellColor": "#ffc7ce"
+                    },
+                    "conditionName": "top10",
+                    "conditionRange": [],
+                    "conditionValue": [
+                        "3"
+                    ]
+                },
+                {
+                    "type": "default",
+                    "cellrange": [
+                        {
+                            "row": [
+                                2,
+                                7
+                            ],
+                            "column": [
+                                14,
+                                14
+                            ]
+                        }
+                    ],
+                    "format": {
+                        "textColor": "#9c0006",
+                        "cellColor": "#ffc7ce"
+                    },
+                    "conditionName": "top10%",
+                    "conditionRange": [],
+                    "conditionValue": [
+                        "30"
+                    ]
+                },
+                {
+                    "type": "default",
+                    "cellrange": [
+                        {
+                            "row": [
+                                2,
+                                7
+                            ],
+                            "column": [
+                                15,
+                                15
+                            ]
+                        }
+                    ],
+                    "format": {
+                        "textColor": "#9c0006",
+                        "cellColor": "#ffc7ce"
+                    },
+                    "conditionName": "last10",
+                    "conditionRange": [],
+                    "conditionValue": [
+                        "2"
+                    ]
+                },
+                {
+                    "type": "default",
+                    "cellrange": [
+                        {
+                            "row": [
+                                2,
+                                7
+                            ],
+                            "column": [
+                                16,
+                                16
+                            ]
+                        }
+                    ],
+                    "format": {
+                        "textColor": "#9c0006",
+                        "cellColor": "#ffc7ce"
+                    },
+                    "conditionName": "last10%",
+                    "conditionRange": [],
+                    "conditionValue": [
+                        "50"
+                    ]
+                },
+                {
                     "type": "dataBar",
                     "cellrange": [
                         {
@@ -29749,6 +30469,34 @@ export const luckyJson: Partial<ILuckyJson> = {
                     "format": [
                         "#6aa84f",
                         "#ffffff"
+                    ]
+                },
+                {
+                    "type": "dataBar",
+                    "cellrange": [
+                        {
+                            "left": 962,
+                            "width": 73,
+                            "top": 200,
+                            "height": 19,
+                            "left_move": 962,
+                            "width_move": 73,
+                            "top_move": 200,
+                            "height_move": 119,
+                            "row": [
+                                10,
+                                15
+                            ],
+                            "column": [
+                                13,
+                                13
+                            ],
+                            "row_focus": 10,
+                            "column_focus": 13
+                        }
+                    ],
+                    "format": [
+                        "#63c384"
                     ]
                 },
                 {

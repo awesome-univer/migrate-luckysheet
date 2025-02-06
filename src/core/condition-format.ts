@@ -1,31 +1,60 @@
 import { generateRandomId, IWorkbookData, IWorksheetData } from "@univerjs/core";
 import { ILuckyJson } from "../common/interface/lucky-json";
 import { ILuckySheet } from "../common/interface/lucky-sheet";
-import { CFNumberOperator, CFRuleType, CFSubRuleType, IConditionFormattingRule, INumberHighlightCell } from "@univerjs/sheets-conditional-formatting";
+import { CFNumberOperator, CFRuleType, CFSubRuleType, CFTextOperator, IAverageHighlightCell, IConditionFormattingRule, IDuplicateValuesHighlightCell, INumberHighlightCell, IRankHighlightCell, ITextHighlightCell, IUniqueValuesHighlightCell } from "@univerjs/sheets-conditional-formatting";
 import { IluckysheetCFDefaultFormat, IluckysheetConditionFormat } from "../common/interface/condition-format";
-import { rangeArrayToRanges } from "../common/util/selection";
+import { rangeArrayToRanges } from "../common/utils/selection";
+import { defaultCondition } from "./utils/default-condition";
+import { dataBarCondition } from "./utils/data-bar-condition";
+import { colorGradationCondition } from "./utils/color-gradation-condition";
 
+/**
+ *  - Highlight Cell 
+        - Greater than //
+        - Less than //
+        - Between //
+        - Equal //
+        - Text contains //
+        - Date // TODO
+        - Duplicate value //
+    - Top/Bottom 
+        - Top 10 //
+        - Top 10% //
+        - Bottom 10 //
+        - Bottom 10% //
+        - Above average //
+        - Below average //
+    - Data Bars // 
+    - Color Scales // TODO
+    - Icon Sets // TODO
+
+ * @param workbookData 
+ * @param worksheetData 
+ * @param luckyJson 
+ * @param sheet 
+ * @returns 
+ */
 export function conditionFormat(workbookData: Partial<IWorkbookData>, worksheetData: Partial<IWorksheetData>, luckyJson: Partial<ILuckyJson>, sheet: Partial<ILuckySheet>) {
-    if(sheet.luckysheet_conditionformat_save) {
+    if (sheet.luckysheet_conditionformat_save) {
         const conditionFormat = sheet.luckysheet_conditionformat_save;
-        
-        const conditionalFormatting: IConditionFormattingRule[] =  conditionFormat.map((condition) => {
+
+        const conditionalFormatting: IConditionFormattingRule[] = conditionFormat.map((condition) => {
             const type = condition.type;
             let conditionalFormattingInfo = null;
             switch (type) {
                 case 'default':
                     conditionalFormattingInfo = defaultCondition(condition)
                     break;
-                // case 'dataBar':
-                //     dataBarCondition(worksheet, worksheetData, condition)
-                //     break;
+                case 'dataBar':
+                    conditionalFormattingInfo = dataBarCondition(condition)
+                    break;
                 // case 'icons':
                 //     iconSetCondition(worksheet, worksheetData, condition)
                 //     break;
-                // case 'colorGradation':
+                case 'colorGradation':
 
-                //     colorGradationCondition(worksheet, worksheetData, condition)
-                //     break;
+                    conditionalFormattingInfo = colorGradationCondition(condition)
+                    break;
 
                 default:
                     break;
@@ -38,76 +67,4 @@ export function conditionFormat(workbookData: Partial<IWorkbookData>, worksheetD
     }
 
     return null;
-}
-
-function defaultCondition(condition: IluckysheetConditionFormat) {
-
-    const conditionName = condition.conditionName;
-
-    let conditionalFormattingInfo = null;
-
-    switch (conditionName) {
-        // case 'greaterThan':
-        // case 'lessThan':
-        // case 'equal':
-        //     conditionalFormattingInfo = conditional(conditionName, 'cellIs', condition)
-        //     break;
-        case 'betweenness':
-            const {cellrange, conditionValue} = condition;
-            const format = condition.format as IluckysheetCFDefaultFormat;
-
-            const cfId = generateRandomId(8);
-            const ranges = rangeArrayToRanges(cellrange);
-
-            const rule: INumberHighlightCell = {
-                type: CFRuleType.highlightCell,
-                subType: CFSubRuleType.number,
-                operator: CFNumberOperator.between,
-                style: {
-                    cl: {
-                        rgb: format.textColor
-                    },
-                    bg: {
-                        rgb: format.cellColor
-                    }
-                },
-                value: conditionValue as [number, number] || []
-            }
-
-            conditionalFormattingInfo = {
-                cfId,
-                ranges,
-                rule,
-                stopIfTrue: false
-            }
-            break;
-
-        // case 'textContains':
-        //     conditionalFormattingInfo = conditional('containsText', 'containsText', condition)
-        //     break;
-        // case 'occurrenceDate':
-        //     // not support
-        //     break;
-        // case 'duplicateValue':
-        //     // not support
-        //     break;
-        // case 'top10':
-        // case 'top10%':
-        // case 'last10':
-        // case 'last10%':
-        //     conditionalFormattingInfo = top10(conditionName, condition)
-        //     break;
-        // case 'AboveAverage':
-        //     conditionalFormattingInfo = aboveAverage(conditionName, condition)
-        //     break;
-        // case 'SubAverage':
-        //     conditionalFormattingInfo = aboveAverage(conditionName, condition)
-        //     break;
-
-        default:
-            break;
-    }
-
-    return conditionalFormattingInfo
-    
 }
