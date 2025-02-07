@@ -24,11 +24,12 @@ Luckysheet Workbook configuration migrated to Univer IWorkbookData
 - [x] column width
 - [x] hidden row
 - [x] hidden column
-- [x] basic cell data 
+- [x] basic cell data
 
 ### Plugin
 
 - [x] data validation
+- [x] conditional formatting
 
 ## Docs
 [Migrate From Luckysheet to Univer](https://docs.univer.ai/en-US/guides/sheets/tutorials/migrate-luckysheet)
