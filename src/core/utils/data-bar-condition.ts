@@ -11,7 +11,7 @@ import { CFRuleType, CFValueType, IDataBar } from "@univerjs/sheets-conditional-
     ]
 
     The single value of format represents a single color, as shown below:
-        "format": [
+    "format": [
         "#6aa84f"
     ]
  * @param condition 

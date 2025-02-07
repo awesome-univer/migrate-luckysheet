@@ -1,4 +1,4 @@
-import { CellValueType, generateRandomId, HorizontalAlign, ICellData, isRealNum, IStyleData, ITextRun, ITextStyle, IWorkbookData, IWorksheetData, VerticalAlign, WrapStrategy } from "@univerjs/core";
+import { CellValueType, generateRandomId, HorizontalAlign, ICellData, isFormulaString, isRealNum, IStyleData, ITextRun, ITextStyle, IWorkbookData, IWorksheetData, VerticalAlign, WrapStrategy } from "@univerjs/core";
 import { ILuckySheet } from "../common/interface/lucky-sheet";
 import { ILuckyJson } from "../common/interface/lucky-json";
 import { ILuckyInlineStrItem } from "../common/interface/cell-style";
@@ -95,7 +95,8 @@ export function covertCell(newCell: ICellData, cell: Partial<IluckySheetCelldata
         newCell.v = cell.m;
     }
 
-    if (cell.f !== undefined) {
+    // formula, but not sparkline
+    if (isFormulaString(cell.f) && !cell.spl) {
         newCell.f = cell.f;
     }
 
@@ -263,6 +264,13 @@ export function covertCellStyle(cellStyle: IStyleData, cell: Partial<IluckySheet
                 break;
         }
     }
+
+    // number format
+    if (cell.ct?.fa !== undefined) {
+        cellStyle.n = {
+            pattern: getPattern(cell.ct.fa),
+        }
+    }
 }
 
 function replaceNewlines(input: string): string {
@@ -274,4 +282,13 @@ function isNumberCell(cell: Partial<IluckySheetCelldataValue>): boolean {
     const isNumber = typeof v === 'number';
     const isNumberCellType = cell.ct?.t === 'n' && v !== undefined && isRealNum(v);
     return isNumber || isNumberCellType;
+}
+
+/**
+ * Text format is @@@ in Univer
+ * @param format 
+ * @returns 
+ */
+function getPattern(format: string){
+    return format === '@' ? '@@@' : format;
 }

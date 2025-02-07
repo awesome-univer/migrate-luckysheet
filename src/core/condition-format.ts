@@ -2,11 +2,11 @@ import { generateRandomId, IWorkbookData, IWorksheetData } from "@univerjs/core"
 import { ILuckyJson } from "../common/interface/lucky-json";
 import { ILuckySheet } from "../common/interface/lucky-sheet";
 import { CFNumberOperator, CFRuleType, CFSubRuleType, CFTextOperator, IAverageHighlightCell, IConditionFormattingRule, IDuplicateValuesHighlightCell, INumberHighlightCell, IRankHighlightCell, ITextHighlightCell, IUniqueValuesHighlightCell } from "@univerjs/sheets-conditional-formatting";
-import { IluckysheetCFDefaultFormat, IluckysheetConditionFormat } from "../common/interface/condition-format";
 import { rangeArrayToRanges } from "../common/utils/selection";
 import { defaultCondition } from "./utils/default-condition";
 import { dataBarCondition } from "./utils/data-bar-condition";
 import { colorGradationCondition } from "./utils/color-gradation-condition";
+import { iconSetCondition } from "./utils/icon-set-condition";
 
 /**
  *  - Highlight Cell 
@@ -25,7 +25,7 @@ import { colorGradationCondition } from "./utils/color-gradation-condition";
         - Above average //
         - Below average //
     - Data Bars // 
-    - Color Scales // TODO
+    - Color Scales //
     - Icon Sets // TODO
 
  * @param workbookData 
@@ -48,11 +48,10 @@ export function conditionFormat(workbookData: Partial<IWorkbookData>, worksheetD
                 case 'dataBar':
                     conditionalFormattingInfo = dataBarCondition(condition)
                     break;
-                // case 'icons':
-                //     iconSetCondition(worksheet, worksheetData, condition)
-                //     break;
+                case 'icons':
+                    conditionalFormattingInfo = iconSetCondition(condition)
+                    break;
                 case 'colorGradation':
-
                     conditionalFormattingInfo = colorGradationCondition(condition)
                     break;
 
@@ -63,7 +62,8 @@ export function conditionFormat(workbookData: Partial<IWorkbookData>, worksheetD
             return conditionalFormattingInfo
         }).filter((item) => item !== null);
 
-        return conditionalFormatting;
+        // Note that the corresponding order is reversed
+        return conditionalFormatting.reverse();
     }
 
     return null;

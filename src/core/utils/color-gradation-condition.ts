@@ -10,47 +10,59 @@ export function colorGradationCondition(condition: IluckysheetConditionFormat) {
     const cfId = generateRandomId(8);
     const ranges = rangeArrayToRanges(cellrange);
 
-    const config : {
+    let config : {
             index: number;
             color: string;
             value: IValueConfig;
-        }[] = [
-        {
-            color: format[0],
-            value: {
-                type: CFValueType.min,
-                value: ""
-            },
-            index: 0
-        },
-    ];
-
+        }[] = []
+    
+    // Note that the corresponding order is reversed
     if(format.length === 2) {
-        config.push({
-            color: format[1],
-            value: {
-                type: CFValueType.max,
-                value: ""
+        config = [
+            {
+                color: format[1],
+                value: {
+                    type: CFValueType.percent,
+                    value: 0
+                },
+                index: 0
             },
-            index: 1
-        })
+            {
+                color: format[0],
+                value: {
+                    type: CFValueType.percent,
+                    value: 100
+                },
+                index: 1
+            }
+        ]
     }else if(format.length === 3){
-        config.push({
-            color: format[1],
-            value: {
-                type: CFValueType.percent,
-                value: 50
+        config = [
+            {
+                color: format[2],
+                value: {
+                    type: CFValueType.percent,
+                    value: 0
+                },
+                index: 0
             },
-            index: 1
-        })
-        config.push({
-            color: format[2],
-            value: {
-                type: CFValueType.max,
-                value: ""
+            {
+                color: format[1],
+                value: {
+                    type: CFValueType.percent,
+                    value: 50
+                },
+                index: 1
             },
-            index: 2
-        })
+            {
+                color: format[0],
+                value: {
+                    type: CFValueType.percent,
+                    value: 100
+                },
+                index: 2
+            }
+        ]
     }
 
     const rule: IColorScale = {

@@ -3,7 +3,6 @@ import { INumberHighlightCell, CFRuleType, CFSubRuleType, CFNumberOperator, ITex
 import { IluckysheetConditionFormat, IluckysheetCFDefaultFormat } from "../../common/interface/condition-format";
 import { rangeArrayToRanges } from "../../common/utils/selection";
 
-
 export function defaultCondition(condition: IluckysheetConditionFormat) {
 
     const { conditionName } = condition;
