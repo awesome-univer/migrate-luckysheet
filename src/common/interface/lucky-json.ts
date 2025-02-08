@@ -43,8 +43,8 @@ export interface ILuckyJson {
     functionButton: string; // Function Button
     showConfigWindowResize: boolean; // Auto-indent interface
     forceCalculation: boolean; // Forced calculation
-    cellRightClickConfig: Partial<ICellRightClickConfig>; // Custom cell right-click menu
-    sheetRightClickConfig: Partial<ISheetRightClickConfig>; // Customize the right-click menu of the bottom sheet bar
+    cellRightClickConfig: Partial<ICellRightClickConfig>; // Custom cell context menu
+    sheetRightClickConfig: Partial<ISheetRightClickConfig>; // Customize the context menu of the bottom sheet bar
     rowHeaderWidth: number; // The width of the row header area
     columnHeaderHeight: number; // The height of the column header area
     sheetFormulaBar: boolean; // Show the formula bar
