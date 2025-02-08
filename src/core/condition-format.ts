@@ -1,8 +1,7 @@
-import { generateRandomId, IWorkbookData, IWorksheetData } from "@univerjs/core";
+import { IWorkbookData, IWorksheetData } from "@univerjs/core";
 import { ILuckyJson } from "../common/interface/lucky-json";
 import { ILuckySheet } from "../common/interface/lucky-sheet";
-import { CFNumberOperator, CFRuleType, CFSubRuleType, CFTextOperator, IAverageHighlightCell, IConditionFormattingRule, IDuplicateValuesHighlightCell, INumberHighlightCell, IRankHighlightCell, ITextHighlightCell, IUniqueValuesHighlightCell } from "@univerjs/sheets-conditional-formatting";
-import { rangeArrayToRanges } from "../common/utils/selection";
+import { IConditionFormattingRule } from "@univerjs/sheets-conditional-formatting";
 import { defaultCondition } from "./utils/default-condition";
 import { dataBarCondition } from "./utils/data-bar-condition";
 import { colorGradationCondition } from "./utils/color-gradation-condition";
@@ -10,23 +9,23 @@ import { iconSetCondition } from "./utils/icon-set-condition";
 
 /**
  *  - Highlight Cell 
-        - Greater than //
-        - Less than //
-        - Between //
-        - Equal //
-        - Text contains //
-        - Date // TODO
-        - Duplicate value //
+        - Greater than
+        - Less than
+        - Between
+        - Equal
+        - Text contains
+        - Date // not support
+        - Duplicate value
     - Top/Bottom 
-        - Top 10 //
-        - Top 10% //
-        - Bottom 10 //
-        - Bottom 10% //
-        - Above average //
-        - Below average //
-    - Data Bars // 
-    - Color Scales //
-    - Icon Sets // TODO
+        - Top 10
+        - Top 10%
+        - Bottom 10
+        - Bottom 10%
+        - Above average
+        - Below average
+    - Data Bars
+    - Color Scales
+    - Icon Sets
 
  * @param workbookData 
  * @param worksheetData 

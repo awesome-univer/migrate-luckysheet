@@ -2,6 +2,7 @@ import { IBorderData, IStyleData, IWorksheetData } from "@univerjs/core";
 
 export function border(newSheet: Partial<IWorksheetData>, sheet: any) {
     newSheet.cellData = {};
+    
     for (let borderInfo of sheet.config.borderInfo) {
         if (borderInfo.rangeType === 'cell') {
             const rowIndex = borderInfo.value.row_index;

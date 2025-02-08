@@ -1,4 +1,4 @@
-import { IWorkbookData, IWorksheetData, Tools } from "@univerjs/core";
+import { generateRandomId, IWorkbookData, IWorksheetData } from "@univerjs/core";
 import { ILuckyJson } from "../common/interface/lucky-json";
 import { ILuckySheet } from "../common/interface/lucky-sheet";
 import { dataVerification } from "./data-verification";
@@ -9,7 +9,7 @@ export function worksheetProperty(workbookData: Partial<IWorkbookData>,worksheet
     if (sheet.index !== undefined) {
         worksheetData.id = `${sheet.index}`;
     } else {
-        worksheetData.id = Tools.generateRandomId(6);
+        worksheetData.id = generateRandomId(6);
     }
 
     // zoom ratio

@@ -156,7 +156,7 @@ function duplicateValue(condition: IluckysheetConditionFormat) {
     const cfId = generateRandomId(8);
     const ranges = rangeArrayToRanges(cellrange);
 
-    const isUnique = conditionValue?.[0] == 1;
+    const isUnique = conditionValue?.[0] === 1 || conditionValue?.[0] === '1';
 
     const rule: IUniqueValuesHighlightCell | IDuplicateValuesHighlightCell = {
         type: CFRuleType.highlightCell,

@@ -56,7 +56,7 @@ export function covertCell(newCell: ICellData, cell: Partial<IluckySheetCelldata
             const content = replaceNewlines(String(inlineStrItem.v)) || '';
             dataStream += content;
 
-            let st = ed;
+            const st = ed;
             ed = st + content.length;
 
             textRuns.push({

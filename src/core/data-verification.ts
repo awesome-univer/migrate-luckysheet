@@ -1,4 +1,4 @@
-import { ISheetDataValidationRule, IWorkbookData, IWorksheetData, Tools } from "@univerjs/core";
+import { generateRandomId, ISheetDataValidationRule, IWorkbookData, IWorksheetData } from "@univerjs/core";
 import { ILuckyJson } from "../common/interface/lucky-json";
 import { ILuckySheet } from "../common/interface/lucky-sheet";
 import { dataValidationMap, dataValidationOperatorMap } from "../common/const/data-verification";
@@ -30,7 +30,7 @@ export function dataVerification(workbookData: Partial<IWorkbookData>, worksheet
             const column = parseInt(columnIndex);
 
             const validationItem: ISheetDataValidationRule = {
-                uid: Tools.generateRandomId(6),
+                uid: generateRandomId(6),
                 type,
                 ranges: [{
                     startRow: row,
