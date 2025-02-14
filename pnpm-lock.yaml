@@ -629,8 +629,8 @@ packages:
     resolution: {integrity: sha512-AYnb1nQyY49te+VRAVgmzfcgjYS91mY5P0TKUDCLEM+gNnA+3T6rWITXRLYCpahpqSQbN5cE+gHpnPyXjHWxcw==}
     dev: true
 
-  /@types/node@22.13.2:
-    resolution: {integrity: sha512-Z+r8y3XL9ZpI2EY52YYygAFmo2/oWfNSj4BCpAXE2McAexDk8VcnBMGC9Djn9gTKt4d2T/hhXqmPzo4hfIXtTg==}
+  /@types/node@22.13.4:
+    resolution: {integrity: sha512-ywP2X0DYtX3y08eFVx5fNIw7/uIv8hYUKgXoK8oayJlLnKcRfEYCxWMVE1XagUdVtCJlZT1AU4LXEABW+L1Peg==}
     dependencies:
       undici-types: 6.20.0
     dev: false
@@ -678,7 +678,7 @@ packages:
     dependencies:
       '@rc-component/color-picker': 2.0.1(react-dom@18.3.1)(react@18.3.1)
       '@rc-component/trigger': 2.2.6(react-dom@18.3.1)(react@18.3.1)
-      '@univerjs/icons': 0.2.15(react-dom@18.3.1)(react@18.3.1)
+      '@univerjs/icons': 0.2.17(react-dom@18.3.1)(react@18.3.1)
       clsx: 2.1.1
       dayjs: 1.11.13
       rc-dialog: 9.6.0(react-dom@18.3.1)(react@18.3.1)
@@ -715,7 +715,7 @@ packages:
       '@univerjs/docs': 0.5.5(@grpc/grpc-js@1.12.6)(react@18.3.1)(rxjs@7.8.1)
       '@univerjs/drawing': 0.5.5(@grpc/grpc-js@1.12.6)(react@18.3.1)(rxjs@7.8.1)
       '@univerjs/engine-render': 0.5.5(@grpc/grpc-js@1.12.6)(react@18.3.1)(rxjs@7.8.1)
-      '@univerjs/icons': 0.2.15(react-dom@18.3.1)(react@18.3.1)
+      '@univerjs/icons': 0.2.17(react-dom@18.3.1)(react@18.3.1)
       '@univerjs/ui': 0.5.5(@grpc/grpc-js@1.12.6)(react-dom@18.3.1)(react@18.3.1)(rxjs@7.8.1)(typescript@5.7.3)
       clsx: 2.1.1
       react: 18.3.1
@@ -792,8 +792,8 @@ packages:
       - react
     dev: false
 
-  /@univerjs/icons@0.2.15(react-dom@18.3.1)(react@18.3.1):
-    resolution: {integrity: sha512-ftlpcdfl5i6e5VLPIXNOfzMAcexQFJUnbGQgu/hFjfwdK7fTwgFM+lXiXuWZbwicXnCzbeVbAhMat+uZPOYrJw==}
+  /@univerjs/icons@0.2.17(react-dom@18.3.1)(react@18.3.1):
+    resolution: {integrity: sha512-WDemI9+iRNWoRYlA5wx377IBPdCo4CvUiWSzgagdbxiOc3ADQ33AHGwYp9AwaBeJxqRSIsKPj+qMjVMzzlioTA==}
     peerDependencies:
       react: '*'
       react-dom: '*'
@@ -836,7 +836,7 @@ packages:
       '@univerjs/design': 0.5.5(react-dom@18.3.1)(react@18.3.1)
       '@univerjs/engine-formula': 0.5.5(@grpc/grpc-js@1.12.6)(react@18.3.1)(rxjs@7.8.1)
       '@univerjs/engine-render': 0.5.5(@grpc/grpc-js@1.12.6)(react@18.3.1)(rxjs@7.8.1)
-      '@univerjs/icons': 0.2.15(react-dom@18.3.1)(react@18.3.1)
+      '@univerjs/icons': 0.2.17(react-dom@18.3.1)(react@18.3.1)
       '@univerjs/sheets': 0.5.5(@grpc/grpc-js@1.12.6)(react@18.3.1)(rxjs@7.8.1)
       '@univerjs/sheets-conditional-formatting': 0.5.5(@grpc/grpc-js@1.12.6)(react@18.3.1)(rxjs@7.8.1)
       '@univerjs/sheets-formula-ui': 0.5.5(@grpc/grpc-js@1.12.6)(react-dom@18.3.1)(react@18.3.1)(rxjs@7.8.1)(typescript@5.7.3)
@@ -884,7 +884,7 @@ packages:
       '@univerjs/docs': 0.5.5(@grpc/grpc-js@1.12.6)(react@18.3.1)(rxjs@7.8.1)
       '@univerjs/engine-formula': 0.5.5(@grpc/grpc-js@1.12.6)(react@18.3.1)(rxjs@7.8.1)
       '@univerjs/engine-render': 0.5.5(@grpc/grpc-js@1.12.6)(react@18.3.1)(rxjs@7.8.1)
-      '@univerjs/icons': 0.2.15(react-dom@18.3.1)(react@18.3.1)
+      '@univerjs/icons': 0.2.17(react-dom@18.3.1)(react@18.3.1)
       '@univerjs/sheets': 0.5.5(@grpc/grpc-js@1.12.6)(react@18.3.1)(rxjs@7.8.1)
       '@univerjs/sheets-data-validation': 0.5.5(@grpc/grpc-js@1.12.6)(react@18.3.1)(rxjs@7.8.1)
       '@univerjs/sheets-formula-ui': 0.5.5(@grpc/grpc-js@1.12.6)(react-dom@18.3.1)(react@18.3.1)(rxjs@7.8.1)(typescript@5.7.3)
@@ -932,7 +932,7 @@ packages:
       '@univerjs/docs-ui': 0.5.5(@grpc/grpc-js@1.12.6)(react-dom@18.3.1)(react@18.3.1)(rxjs@7.8.1)(typescript@5.7.3)
       '@univerjs/engine-formula': 0.5.5(@grpc/grpc-js@1.12.6)(react@18.3.1)(rxjs@7.8.1)
       '@univerjs/engine-render': 0.5.5(@grpc/grpc-js@1.12.6)(react@18.3.1)(rxjs@7.8.1)
-      '@univerjs/icons': 0.2.15(react-dom@18.3.1)(react@18.3.1)
+      '@univerjs/icons': 0.2.17(react-dom@18.3.1)(react@18.3.1)
       '@univerjs/sheets': 0.5.5(@grpc/grpc-js@1.12.6)(react@18.3.1)(rxjs@7.8.1)
       '@univerjs/sheets-formula': 0.5.5(@grpc/grpc-js@1.12.6)(react@18.3.1)(rxjs@7.8.1)
       '@univerjs/sheets-ui': 0.5.5(@grpc/grpc-js@1.12.6)(react-dom@18.3.1)(react@18.3.1)(rxjs@7.8.1)(typescript@5.7.3)
@@ -975,7 +975,7 @@ packages:
       '@univerjs/engine-formula': 0.5.5(@grpc/grpc-js@1.12.6)(react@18.3.1)(rxjs@7.8.1)
       '@univerjs/engine-numfmt': 0.5.5
       '@univerjs/engine-render': 0.5.5(@grpc/grpc-js@1.12.6)(react@18.3.1)(rxjs@7.8.1)
-      '@univerjs/icons': 0.2.15(react-dom@18.3.1)(react@18.3.1)
+      '@univerjs/icons': 0.2.17(react-dom@18.3.1)(react@18.3.1)
       '@univerjs/sheets': 0.5.5(@grpc/grpc-js@1.12.6)(react@18.3.1)(rxjs@7.8.1)
       '@univerjs/sheets-numfmt': 0.5.5(@grpc/grpc-js@1.12.6)(react@18.3.1)(rxjs@7.8.1)
       '@univerjs/sheets-ui': 0.5.5(@grpc/grpc-js@1.12.6)(react-dom@18.3.1)(react@18.3.1)(rxjs@7.8.1)(typescript@5.7.3)
@@ -1019,7 +1019,7 @@ packages:
       '@univerjs/engine-formula': 0.5.5(@grpc/grpc-js@1.12.6)(react@18.3.1)(rxjs@7.8.1)
       '@univerjs/engine-numfmt': 0.5.5
       '@univerjs/engine-render': 0.5.5(@grpc/grpc-js@1.12.6)(react@18.3.1)(rxjs@7.8.1)
-      '@univerjs/icons': 0.2.15(react-dom@18.3.1)(react@18.3.1)
+      '@univerjs/icons': 0.2.17(react-dom@18.3.1)(react@18.3.1)
       '@univerjs/protocol': 0.1.40(@grpc/grpc-js@1.12.6)(rxjs@7.8.1)
       '@univerjs/sheets': 0.5.5(@grpc/grpc-js@1.12.6)(react@18.3.1)(rxjs@7.8.1)
       '@univerjs/telemetry': 0.5.5(@grpc/grpc-js@1.12.6)(react@18.3.1)(rxjs@7.8.1)
@@ -1072,7 +1072,7 @@ packages:
       '@univerjs/core': 0.5.5(@grpc/grpc-js@1.12.6)(react@18.3.1)(rxjs@7.8.1)
       '@univerjs/design': 0.5.5(react-dom@18.3.1)(react@18.3.1)
       '@univerjs/engine-render': 0.5.5(@grpc/grpc-js@1.12.6)(react@18.3.1)(rxjs@7.8.1)
-      '@univerjs/icons': 0.2.15(react-dom@18.3.1)(react@18.3.1)
+      '@univerjs/icons': 0.2.17(react-dom@18.3.1)(react@18.3.1)
       clsx: 2.1.1
       localforage: 1.10.0
       rc-notification: 5.6.2(react-dom@18.3.1)(react@18.3.1)
@@ -1482,7 +1482,7 @@ packages:
       '@protobufjs/path': 1.1.2
       '@protobufjs/pool': 1.1.0
       '@protobufjs/utf8': 1.1.0
-      '@types/node': 22.13.2
+      '@types/node': 22.13.4
       long: 5.3.0
     dev: false
 
