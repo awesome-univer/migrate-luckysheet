@@ -678,7 +678,7 @@ packages:
     dependencies:
       '@rc-component/color-picker': 2.0.1(react-dom@18.3.1)(react@18.3.1)
       '@rc-component/trigger': 2.2.6(react-dom@18.3.1)(react@18.3.1)
-      '@univerjs/icons': 0.2.24(react-dom@18.3.1)(react@18.3.1)
+      '@univerjs/icons': 0.2.25(react-dom@18.3.1)(react@18.3.1)
       clsx: 2.1.1
       dayjs: 1.11.13
       rc-dialog: 9.6.0(react-dom@18.3.1)(react@18.3.1)
@@ -715,7 +715,7 @@ packages:
       '@univerjs/docs': 0.5.5(@grpc/grpc-js@1.13.0)(react@18.3.1)(rxjs@7.8.2)
       '@univerjs/drawing': 0.5.5(@grpc/grpc-js@1.13.0)(react@18.3.1)(rxjs@7.8.2)
       '@univerjs/engine-render': 0.5.5(@grpc/grpc-js@1.13.0)(react@18.3.1)(rxjs@7.8.2)
-      '@univerjs/icons': 0.2.24(react-dom@18.3.1)(react@18.3.1)
+      '@univerjs/icons': 0.2.25(react-dom@18.3.1)(react@18.3.1)
       '@univerjs/ui': 0.5.5(@grpc/grpc-js@1.13.0)(react-dom@18.3.1)(react@18.3.1)(rxjs@7.8.2)(typescript@5.7.3)
       clsx: 2.1.1
       react: 18.3.1
@@ -792,8 +792,8 @@ packages:
       - react
     dev: false
 
-  /@univerjs/icons@0.2.24(react-dom@18.3.1)(react@18.3.1):
-    resolution: {integrity: sha512-DpBGabfhD6jQRd49gIlAtMcyB48+galhVJ10CWccsZERo832MV+6ozHelrZyquPX4kdAi9L2DCINDyBPbWlmoQ==}
+  /@univerjs/icons@0.2.25(react-dom@18.3.1)(react@18.3.1):
+    resolution: {integrity: sha512-5/cQdJ7SOqfcvF8pJwacyLWrQAmz1tUjPvuwejiZ3k/aNXXaugdHzGPZnmoFRYdfWiS6P2FuBa6+FVfJkCS9dg==}
     peerDependencies:
       react: '*'
       react-dom: '*'
@@ -836,7 +836,7 @@ packages:
       '@univerjs/design': 0.5.5(react-dom@18.3.1)(react@18.3.1)
       '@univerjs/engine-formula': 0.5.5(@grpc/grpc-js@1.13.0)(react@18.3.1)(rxjs@7.8.2)
       '@univerjs/engine-render': 0.5.5(@grpc/grpc-js@1.13.0)(react@18.3.1)(rxjs@7.8.2)
-      '@univerjs/icons': 0.2.24(react-dom@18.3.1)(react@18.3.1)
+      '@univerjs/icons': 0.2.25(react-dom@18.3.1)(react@18.3.1)
       '@univerjs/sheets': 0.5.5(@grpc/grpc-js@1.13.0)(react@18.3.1)(rxjs@7.8.2)
       '@univerjs/sheets-conditional-formatting': 0.5.5(@grpc/grpc-js@1.13.0)(react@18.3.1)(rxjs@7.8.2)
       '@univerjs/sheets-formula-ui': 0.5.5(@grpc/grpc-js@1.13.0)(react-dom@18.3.1)(react@18.3.1)(rxjs@7.8.2)(typescript@5.7.3)
@@ -884,7 +884,7 @@ packages:
       '@univerjs/docs': 0.5.5(@grpc/grpc-js@1.13.0)(react@18.3.1)(rxjs@7.8.2)
       '@univerjs/engine-formula': 0.5.5(@grpc/grpc-js@1.13.0)(react@18.3.1)(rxjs@7.8.2)
       '@univerjs/engine-render': 0.5.5(@grpc/grpc-js@1.13.0)(react@18.3.1)(rxjs@7.8.2)
-      '@univerjs/icons': 0.2.24(react-dom@18.3.1)(react@18.3.1)
+      '@univerjs/icons': 0.2.25(react-dom@18.3.1)(react@18.3.1)
       '@univerjs/sheets': 0.5.5(@grpc/grpc-js@1.13.0)(react@18.3.1)(rxjs@7.8.2)
       '@univerjs/sheets-data-validation': 0.5.5(@grpc/grpc-js@1.13.0)(react@18.3.1)(rxjs@7.8.2)
       '@univerjs/sheets-formula-ui': 0.5.5(@grpc/grpc-js@1.13.0)(react-dom@18.3.1)(react@18.3.1)(rxjs@7.8.2)(typescript@5.7.3)
@@ -932,7 +932,7 @@ packages:
       '@univerjs/docs-ui': 0.5.5(@grpc/grpc-js@1.13.0)(react-dom@18.3.1)(react@18.3.1)(rxjs@7.8.2)(typescript@5.7.3)
       '@univerjs/engine-formula': 0.5.5(@grpc/grpc-js@1.13.0)(react@18.3.1)(rxjs@7.8.2)
       '@univerjs/engine-render': 0.5.5(@grpc/grpc-js@1.13.0)(react@18.3.1)(rxjs@7.8.2)
-      '@univerjs/icons': 0.2.24(react-dom@18.3.1)(react@18.3.1)
+      '@univerjs/icons': 0.2.25(react-dom@18.3.1)(react@18.3.1)
       '@univerjs/sheets': 0.5.5(@grpc/grpc-js@1.13.0)(react@18.3.1)(rxjs@7.8.2)
       '@univerjs/sheets-formula': 0.5.5(@grpc/grpc-js@1.13.0)(react@18.3.1)(rxjs@7.8.2)
       '@univerjs/sheets-ui': 0.5.5(@grpc/grpc-js@1.13.0)(react-dom@18.3.1)(react@18.3.1)(rxjs@7.8.2)(typescript@5.7.3)
@@ -975,7 +975,7 @@ packages:
       '@univerjs/engine-formula': 0.5.5(@grpc/grpc-js@1.13.0)(react@18.3.1)(rxjs@7.8.2)
       '@univerjs/engine-numfmt': 0.5.5
       '@univerjs/engine-render': 0.5.5(@grpc/grpc-js@1.13.0)(react@18.3.1)(rxjs@7.8.2)
-      '@univerjs/icons': 0.2.24(react-dom@18.3.1)(react@18.3.1)
+      '@univerjs/icons': 0.2.25(react-dom@18.3.1)(react@18.3.1)
       '@univerjs/sheets': 0.5.5(@grpc/grpc-js@1.13.0)(react@18.3.1)(rxjs@7.8.2)
       '@univerjs/sheets-numfmt': 0.5.5(@grpc/grpc-js@1.13.0)(react@18.3.1)(rxjs@7.8.2)
       '@univerjs/sheets-ui': 0.5.5(@grpc/grpc-js@1.13.0)(react-dom@18.3.1)(react@18.3.1)(rxjs@7.8.2)(typescript@5.7.3)
@@ -1019,7 +1019,7 @@ packages:
       '@univerjs/engine-formula': 0.5.5(@grpc/grpc-js@1.13.0)(react@18.3.1)(rxjs@7.8.2)
       '@univerjs/engine-numfmt': 0.5.5
       '@univerjs/engine-render': 0.5.5(@grpc/grpc-js@1.13.0)(react@18.3.1)(rxjs@7.8.2)
-      '@univerjs/icons': 0.2.24(react-dom@18.3.1)(react@18.3.1)
+      '@univerjs/icons': 0.2.25(react-dom@18.3.1)(react@18.3.1)
       '@univerjs/protocol': 0.1.40(@grpc/grpc-js@1.13.0)(rxjs@7.8.2)
       '@univerjs/sheets': 0.5.5(@grpc/grpc-js@1.13.0)(react@18.3.1)(rxjs@7.8.2)
       '@univerjs/telemetry': 0.5.5(@grpc/grpc-js@1.13.0)(react@18.3.1)(rxjs@7.8.2)
@@ -1072,7 +1072,7 @@ packages:
       '@univerjs/core': 0.5.5(@grpc/grpc-js@1.13.0)(react@18.3.1)(rxjs@7.8.2)
       '@univerjs/design': 0.5.5(react-dom@18.3.1)(react@18.3.1)
       '@univerjs/engine-render': 0.5.5(@grpc/grpc-js@1.13.0)(react@18.3.1)(rxjs@7.8.2)
-      '@univerjs/icons': 0.2.24(react-dom@18.3.1)(react@18.3.1)
+      '@univerjs/icons': 0.2.25(react-dom@18.3.1)(react@18.3.1)
       clsx: 2.1.1
       localforage: 1.10.0
       rc-notification: 5.6.2(react-dom@18.3.1)(react@18.3.1)
